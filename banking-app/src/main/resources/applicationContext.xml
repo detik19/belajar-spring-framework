@@ -5,13 +5,5 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans-4.3.xsd
 		http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context-4.3.xsd">
 
-	<bean name="employee" class="com.subrutin.halospring.Employee">
-		<property name="id" value="2"></property>
-		<property name="fullName" value="Silvie"></property>
-		<property name="address" value="Jalan Merdeka"></property>	
-	</bean>
 	
-	<bean name="company" class="com.subrutin.halospring.Company">
-		<constructor-arg ref="employee"></constructor-arg>
-	</bean>
 </beans>

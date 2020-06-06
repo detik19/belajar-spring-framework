@@ -12,11 +12,19 @@ public class App
         employee.setFullName("Tedy Tri Saputro");
         employee.setAddress("Jalan Kusuma Bangsa");
         
-        System.out.println("Object yang dicreate by code :"+ employee.toString());
+        Company company = new Company(employee);
         
+        System.out.println("Object employee yang dicreate by code :"+ employee.toString());
+        System.out.println("Object company yang dicreate by code :"+ company.toString());
+
         //with spring
         ApplicationContext appCtx = new ClassPathXmlApplicationContext("applicationContext.xml");
+        
         Employee employeeBean = (Employee) appCtx.getBean("employee");
-        System.out.println("Object yang dicreate by Spring :"+ employeeBean.toString());
+        Company companyBean = (Company) appCtx.getBean("company");
+
+        System.out.println("Object employee yang dicreate by Spring :"+ employeeBean.toString());
+        System.out.println("Object company yang dicreate by Spring :"+ companyBean.toString());
+
     }
 }

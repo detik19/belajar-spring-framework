@@ -4,7 +4,7 @@ public class Employee {
 
 	private String id;
 	private String fullName;
-	private String address;	
+	private String address;
 	
 	public String getId() {
 		return id;
@@ -28,8 +28,6 @@ public class Employee {
 	public String toString() {
 		return "Employee [id=" + id + ", fullName=" + fullName + ", address=" + address + "]";
 	}
-
-
 	
 	
 	
